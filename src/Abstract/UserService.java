@@ -1,11 +1,8 @@
 package Abstract;
 
 import Entities.User;
+import Utilities.BaseCrudOperation;
 
-public interface UserService {
-	public void add(User user);
+public interface UserService extends BaseCrudOperation<User> {
 
-	public void update(User user);
-
-	public void delete(User user);
 }

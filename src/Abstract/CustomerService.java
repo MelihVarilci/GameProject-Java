@@ -1,11 +1,8 @@
 package Abstract;
 
 import Entities.Customer;
+import Utilities.BaseCrudOperation;
 
-public interface CustomerService {
-	public void add(Customer customer);
+public interface CustomerService extends BaseCrudOperation<Customer> {
 
-	public void update(Customer customer);
-
-	public void delete(Customer customer);
 }

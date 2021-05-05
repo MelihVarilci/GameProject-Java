@@ -1,11 +1,8 @@
 package Abstract;
 
 import Entities.Game;
+import Utilities.BaseCrudOperation;
 
-public interface GameService {
-	public void add(Game game);
+public interface GameService extends BaseCrudOperation<Game> {
 
-	public void update(Game game);
-
-	public void delete(Game game);
 }
